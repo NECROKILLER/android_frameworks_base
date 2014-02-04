@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2013-2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,6 +24,7 @@ import android.util.AttributeSet;
 
 public class CMCaseView extends DessertCaseView {
     private static final int[] PASTRIES = {
+<<<<<<< HEAD
             R.drawable.cm_cid_angry,
             R.drawable.cm_cid_normal,
             R.drawable.dessert_kitkat,      // Used with permission
@@ -51,6 +52,35 @@ public class CMCaseView extends DessertCaseView {
             R.drawable.dessert_donut,       // 2009
             R.drawable.dessert_eclair,      // 2009
             R.drawable.dessert_froyo        // 2010
+=======
+            R.drawable.cm_cid_normal,
+            R.drawable.cm_cid_standing_normal,
+            R.drawable.dessert_kitkat,
+            R.drawable.dessert_android
+    };
+
+    private static final int[] RARE_PASTRIES = {
+            R.drawable.cm_cid_angry,
+            R.drawable.cm_cid_standing_angry,
+            R.drawable.dessert_gingerbread,
+            R.drawable.dessert_ics,
+            R.drawable.dessert_jellybean
+    };
+
+    private static final int[] XRARE_PASTRIES = {
+            R.drawable.cm_cid_wat,
+            R.drawable.cm_cid_circle,
+            R.drawable.cm_cid_confused,
+            R.drawable.cm_cid_standing_skate,
+    };
+
+    private static final int[] XXRARE_PASTRIES = {
+            R.drawable.cm_andy,
+            R.drawable.dessert_cupcake,
+            R.drawable.dessert_donut,
+            R.drawable.dessert_eclair,
+            R.drawable.dessert_froyo
+>>>>>>> bd53122761a802e6df67722c350c91c94bd77dfc
     };
 
     private static final int NUM_PASTRIES = PASTRIES.length + RARE_PASTRIES.length

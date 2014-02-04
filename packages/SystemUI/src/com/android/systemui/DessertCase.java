@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 The Android Open Source Project
- * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2013-2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,11 @@ public class DessertCase extends Activity {
         PackageManager pm = getPackageManager();
         final ComponentName cn = new ComponentName(this, DessertCaseDream.class);
         if (pm.getComponentEnabledSetting(cn) != PackageManager.COMPONENT_ENABLED_STATE_ENABLED) {
-            Slog.v("DessertCase", "ACHIEVEMENT UNLOCKED");
+            if (isCM) {
+                Slog.v("DessertCase", "CyanogenMod enabled!");
+            } else {
+                Slog.v("DessertCase", "ACHIEVEMENT UNLOCKED");
+            }
             pm.setComponentEnabledSetting(cn,
                     PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                     PackageManager.DONT_KILL_APP);
@@ -46,7 +50,10 @@ public class DessertCase extends Activity {
 
         if (isCM) {
             mView = new CMCaseView(this);
+<<<<<<< HEAD
             Slog.v("DessertCase", "CyanogenMod enabled!");
+=======
+>>>>>>> bd53122761a802e6df67722c350c91c94bd77dfc
         } else {
             mView = new DessertCaseView(this);
         }

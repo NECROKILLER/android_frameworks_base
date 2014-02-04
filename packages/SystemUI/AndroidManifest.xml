@@ -245,6 +245,7 @@
         </service>
 
         <activity android:name=".DessertCaseDreamSettings"
+            android:process=":sweetsweetdesserts"
             android:taskAffinity=""
             android:excludeFromRecents="true"
             android:exported="true">

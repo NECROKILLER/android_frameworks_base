@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 The Android Open Source Project
- * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2013-2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,6 +24,8 @@ import android.util.Slog;
 
 import com.android.systemui.cm.CMCaseView;
 
+import com.android.systemui.cm.CMCaseView;
+
 public class DessertCaseDream extends DreamService {
     private DessertCaseView mView;
     private DessertCaseView.RescalingContainer mContainer;
@@ -38,7 +40,10 @@ public class DessertCaseDream extends DreamService {
 
         if (isCM) {
             mView = new CMCaseView(this);
+<<<<<<< HEAD
             Slog.v("DessertCaseDream", "CyanogenMod enabled!");
+=======
+>>>>>>> bd53122761a802e6df67722c350c91c94bd77dfc
         } else {
             mView = new DessertCaseView(this);
         }

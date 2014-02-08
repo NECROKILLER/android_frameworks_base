@@ -24,35 +24,7 @@ import android.util.AttributeSet;
 
 public class CMCaseView extends DessertCaseView {
     private static final int[] PASTRIES = {
-<<<<<<< HEAD
-            R.drawable.cm_cid_angry,
-            R.drawable.cm_cid_normal,
-            R.drawable.dessert_kitkat,      // Used with permission
-            R.drawable.dessert_android,     // Thx Irina
-            R.drawable.cm_cid_confused
-    };
 
-    private static final int[] RARE_PASTRIES = {
-            R.drawable.cm_cid_wat,
-            R.drawable.cm_cid_circle,
-            R.drawable.dessert_gingerbread, // 2010
-            R.drawable.dessert_ics,         // 2011
-            R.drawable.dessert_jellybean    // 2012
-    };
-
-    private static final int[] XRARE_PASTRIES = {
-            R.drawable.cm_cid_standing_angry,
-            R.drawable.cm_cid_standing_skate,
-            R.drawable.cm_cid_standing_normal
-    };
-
-    private static final int[] XXRARE_PASTRIES = {
-            R.drawable.cm_andy,             // The old days
-            R.drawable.dessert_cupcake,     // 2009
-            R.drawable.dessert_donut,       // 2009
-            R.drawable.dessert_eclair,      // 2009
-            R.drawable.dessert_froyo        // 2010
-=======
             R.drawable.cm_cid_normal,
             R.drawable.cm_cid_standing_normal,
             R.drawable.dessert_kitkat,
@@ -80,7 +52,6 @@ public class CMCaseView extends DessertCaseView {
             R.drawable.dessert_donut,
             R.drawable.dessert_eclair,
             R.drawable.dessert_froyo
->>>>>>> bd53122761a802e6df67722c350c91c94bd77dfc
     };
 
     private static final int NUM_PASTRIES = PASTRIES.length + RARE_PASTRIES.length

@@ -40,10 +40,6 @@ public class DessertCaseDream extends DreamService {
 
         if (isCM) {
             mView = new CMCaseView(this);
-<<<<<<< HEAD
-            Slog.v("DessertCaseDream", "CyanogenMod enabled!");
-=======
->>>>>>> bd53122761a802e6df67722c350c91c94bd77dfc
         } else {
             mView = new DessertCaseView(this);
         }
